@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -p -A -t | grep -v '/\|^\.\{1,2\}$' | paste -sd "," - | sed 's|/$|/|g'
